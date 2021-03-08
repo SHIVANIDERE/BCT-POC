@@ -62,22 +62,7 @@ UNIQUE NONCLUSTERED
 GO
 SET ANSI_PADDING OFF
 GO
-/****** Object:  Table [dbo].[Tbl_UserRole] ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-CREATE TABLE [dbo].[Tbl_UserRole](
-	[UserRoleID] [int] IDENTITY(1,1) NOT NULL,
-	[UserId] [int] NULL,
-	[RoleId] [int] NULL,
-PRIMARY KEY CLUSTERED
-(
-	[UserRoleID] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
 
-GO
 /****** Object:  Table [dbo].[Tbl_Users] ******/
 SET ANSI_NULLS ON
 GO
